@@ -13,10 +13,9 @@
     "node": ">=20.0.0"
   },
   "dependencies": {
-    "discord.js": "^14.0.0",
-    "dotenv": "^16.4.7",
-    "openai": "^5.0.0",
-    "@supabase/supabase-js": "^2.0.0"
+    "@supabase/supabase-js": "^2.119.2",
+    "discord.js": "^14.28.1",
+    "dotenv": "^16.6.1",
+    "openai": "^5.23.2"
   }
 }
-
