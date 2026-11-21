@@ -1,1 +1,22 @@
+{
+  "name": "Bot-da-House",
+  "version": "1.0.0",
+  "description": "BOT OFICIAL DA HOUSE!!!",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "deploy": "node src/deploy-commands.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "discord.js": "^14.0.0",
+    "dotenv": "^16.4.7",
+    "openai": "^5.0.0",
+    "@supabase/supabase-js": "^2.0.0"
+  }
+}
 
