@@ -36,7 +36,15 @@ client.once(Events.ClientReady, (readyClient) => {
   console.log("Status: ONLINE");
   console.log("================================");
 });
+client.on('messageCreate', async (message) => {
+  // 1. Impede que o bot responda a si mesmo ou a outros bots (evita loop infinito)
+  if (message.author.bot) return;
 
+  // 2. Verifica se o bot foi mencionado na mensagem (@SeuBot)
+  if (message.mentions.has(client.user) && !message.mentions.everyone)
+    return message.reply('swag bot'); // Use message.channel.send('swag bot') se não quiser que ele marque a pessoa de volta
+  }
+          
 client.on(Events.InteractionCreate, async (interaction) => {
   if (!interaction.isChatInputCommand()) return;
 
